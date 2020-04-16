@@ -1,3 +1,12 @@
 import React from "react"
+import Page from './../layouts/page.layout';
+import Hero from './../components/hero';
 
-export default () => <div>Hello world!</div>
+import "../main.scss";
+
+export default () => <div>
+    <Page>
+        <Hero />
+        This shows off the body font.
+    </Page>
+</div>

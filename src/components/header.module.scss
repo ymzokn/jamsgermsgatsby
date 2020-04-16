@@ -1,0 +1,65 @@
+.header {
+    font-family: "Playfair Display", sans-serif;
+    background-image: linear-gradient(to left, rgb(95, 158, 160), rgb(66, 111, 112));
+    height: 7.5vh;
+    width: 100%;
+}
+
+.horizontal-link {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.3rem;
+    transition: all .1s;
+
+    .nav-link {
+        padding: 1rem;
+        text-decoration: none;
+        color: whitesmoke;
+        transition: all .3s;
+        position: relative;
+    }
+
+    .nav-link:hover,
+    .navlink:focus,
+    .navlink:active {
+        color: lightgray;
+    }
+
+    .nav-link.active {
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 0;
+        height: 3px;
+        background-color: currentColor;
+    }
+
+    .nav-link.active::after {
+        animation: enlarge .5s forwards;
+    }
+
+    @keyframes enlarge {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    // .nav-link:not(.active):hover::after,
+    // .navlink:not(.active):focus::after,
+    // .navlink:not(.active):active::after {
+    //     width: 100%;
+    // }
+}

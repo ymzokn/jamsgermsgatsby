@@ -1,0 +1,12 @@
+.page-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.footer {
+    justify-self: flex-end;
+}

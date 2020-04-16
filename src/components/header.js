@@ -5,7 +5,7 @@ import headerStyles from "./header.module.scss";
 const Header = () => {
     return (
         <nav className={headerStyles.header}>
-            <ul className={headerStyles.horizontalLink}>
+            <ul className={headerStyles.horizontalNav}>
                 <li>
                     <Link className={headerStyles.navLink} to="/" activeClassName={headerStyles.active}>Home</Link>
                 </li>

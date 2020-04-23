@@ -28,7 +28,7 @@
     color: #3a3a3a;
     transition: all 0.1s;
     position: relative;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #ddd;
     white-space: nowrap;
 
     .nav-link.active {
@@ -59,8 +59,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: width 1s;
-    // transform: translate(-50%, 0);
+    transition: width 0.4s;
+    transform: translateY(100%);
     width: 0;
     height: 1px;
     background-color: black;

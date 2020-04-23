@@ -26,12 +26,13 @@
     padding: 0.25rem 0;
     text-decoration: none;
     color: #3a3a3a;
-    transition: all 0.3s;
+    transition: all 0.1s;
     position: relative;
     border-bottom: 1px solid lightgray;
     white-space: nowrap;
 
     .nav-link.active {
+      font-weight: 900;
     }
 
     // .nav-link:not(.active):hover::after,

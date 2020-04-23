@@ -1,61 +1,36 @@
 .header {
-    position: fixed;
-    font-family: "Playfair Display", sans-serif;
-    background-image: linear-gradient(to left, rgb(95, 158, 160), rgb(66, 111, 112));
-    height: 7.5vh;
-    width: 100%;
+  position: fixed;
+  height: 7.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+  border-bottom: 1px solid lightgray;
 }
 
 .horizontal-nav {
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style-type: none;
-    font-size: 1.3rem;
-    transition: all .1s;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all 0.1s;
+  text-transform: uppercase;
 
-    .nav-link {
-        padding: 1rem;
-        text-decoration: none;
-        color: whitesmoke;
-        transition: all .3s;
-        position: relative;
-    }
-
-    .nav-link:hover,
-    .navlink:focus,
-    .navlink:active {
-        color: lightgray;
-    }
+  .nav-link {
+    margin: 0.75rem;
+    padding: 0.25rem 0;
+    text-decoration: none;
+    color: #3a3a3a;
+    transition: all 0.3s;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    white-space: nowrap;
 
     .nav-link.active {
-        color: rgb(255, 255, 255);
-    }
-
-    .nav-link::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, -100%);
-        width: 0;
-        height: 3px;
-        background-color: currentColor;
-    }
-
-    .nav-link.active::after {
-        animation: enlarge .5s forwards;
-    }
-
-    @keyframes enlarge {
-        from {
-            width: 0;
-        }
-
-        to {
-            width: 100%;
-        }
     }
 
     // .nav-link:not(.active):hover::after,
@@ -63,4 +38,38 @@
     // .navlink:not(.active):active::after {
     //     width: 100%;
     // }
+  }
+
+  .nav-link:hover::after,
+  .navlink:focus::after,
+  .navlink:active::after {
+    width: 100%;
+  }
+
+  .nav-link.active {
+    // color: rgb(255, 255, 255);
+  }
+
+  .nav-link::after {
+    content: "";
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1s;
+    // transform: translate(-50%, 0);
+    width: 0;
+    height: 1px;
+    background-color: black;
+  }
+
+  .nav-link.active::after {
+  }
+
+  // .nav-link:not(.active):hover::after,
+  // .navlink:not(.active):focus::after,
+  // .navlink:not(.active):active::after {
+  //     width: 100%;
+  // }
 }

@@ -23,10 +23,18 @@
             text-transform: uppercase;
             font-weight: 500;
         }
+
+        .separator {
+            height: 1px;
+            margin: 0.5rem 0;
+            width: 50%;
+            border-top: 1px solid whitesmoke;
+            border-bottom: 1px solid lightgray;
+        }
     }
 
     .hero-image-wrapper {
-        height: 55rem;
+        height: calc(100vh - 5rem);
         background-color: greenyellow;
         position: absolute;
         top: 0;
@@ -36,5 +44,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .scroll-prompt {
+        font-size: .9rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 12.5%;
+
+        p {
+            margin: 0 1rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .scroll-prompt p {
+        display: none;
     }
 }

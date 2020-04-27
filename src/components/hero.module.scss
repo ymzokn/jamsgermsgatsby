@@ -47,16 +47,23 @@
     }
 
     .scroll-prompt {
-        font-size: .9rem;
+        font-size: .8rem;
         font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 100%;
+        top: calc(100vh - 5rem);
+        transform: translateY(-100%);
         left: 12.5%;
 
+        img {
+            transform: scale(.75);
+
+        }
+
         p {
+
             margin: 0 1rem;
         }
     }

@@ -5,9 +5,9 @@ import Hero from "../components/hero"
 import "../main.scss"
 
 export default () => (
-  <div>
+  < div >
     <Page>
       <Hero></Hero>
     </Page>
-  </div>
+  </div >
 )

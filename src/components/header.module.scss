@@ -11,8 +11,13 @@
 }
 
 .logo {
+  transition: transform .2s;
   transform: translateY(5rem);
   margin-left: 5rem;
+}
+
+.shrunk {
+  transform: scale(.5);
 }
 
 .horizontal-nav {

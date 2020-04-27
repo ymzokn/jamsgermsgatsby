@@ -1,13 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 import Button from "./button"
-
+import MainLogo from "./mainlogo"
 import headerStyles from "./header.module.scss"
 
 const Header = () => {
   return (
     <nav className={headerStyles.header}>
-      <div className={headerStyles.logo}>Logo To Come</div>
+      <div style={{ marginTop: "8rem" }}>
+        <Link to="/">
+          <MainLogo></MainLogo>
+        </Link>
+      </div>
       <ul className={headerStyles.horizontalNav}>
         <li>
           <Link

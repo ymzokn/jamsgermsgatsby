@@ -23,8 +23,8 @@ const Header = () => {
     <nav className={headerStyles.header}>
       <div className={`${headerStyles.logo} ${scrolled ? `${headerStyles.shrunk}` : ""}`}>
         <Link to="/">
-          <img className={headerStyles.logoImage} src={require("../../static/jg-logo-clipped.png")}></img>
-          {/* <MainLogo></MainLogo> */}
+          {/* <img className={headerStyles.logoImage} src={require("../../static/jg-logo-clipped.png")}></img> */}
+          <MainLogo></MainLogo>
         </Link>
       </div>
       {width >= 1000 ? <Fixed></Fixed> : <Hamburger></Hamburger>}

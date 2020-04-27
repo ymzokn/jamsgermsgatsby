@@ -8,7 +8,7 @@ const MainLogo = () => {
       file(relativePath: { eq: "jg-logo-clipped.png" }) {
         childImageSharp {
           fixed(width: 200, height: 200, quality: 100) {
-            ...GatsbyImageSharpFixed
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }

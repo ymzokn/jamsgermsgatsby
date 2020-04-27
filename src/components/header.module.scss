@@ -215,3 +215,15 @@
 .hamburger-icon-closed::after {
   transform: rotate(-45deg);
 }
+
+@media (max-width: 600px) {
+
+  .hamburger-icon-wrapper {
+    left: 5rem;
+    right: 0;
+  }
+
+  .logo {
+    display: none;
+  }
+}

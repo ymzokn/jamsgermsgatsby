@@ -1,21 +1,21 @@
 .header {
   position: fixed;
-  height: 7.5vh;
-  width: 100%;
+  height: 5rem;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10rem;
   border-bottom: 1px solid lightgray;
   background-color: whitesmoke;
 }
 
 .logo {
-  width: 1rem;
-  height: 1rem;
+  transform: translateY(5rem);
+  margin-left: 5rem;
 }
 
 .horizontal-nav {
+  margin: 0 10rem;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -71,14 +71,22 @@
     background-color: black;
   }
 
-  .nav-link.active::after {
-  }
+  .nav-link.active::after {}
 
   // .nav-link:not(.active):hover::after,
   // .navlink:not(.active):focus::after,
   // .navlink:not(.active):active::after {
   //     width: 100%;
   // }
+}
+
+.hamburger::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: whitesmoke;
 }
 
 .hamburger {
@@ -92,7 +100,7 @@
   background-color: rgb(213, 228, 227);
 
   .vertical-nav {
-    margin-top: 50%;
+    margin-top: 5rem;
     list-style-type: none;
     height: 100%;
     display: flex;
@@ -113,8 +121,7 @@
       text-transform: uppercase;
       font-weight: 500;
 
-      .nav-link.active {
-      }
+      .nav-link.active {}
 
       // .nav-link:not(.active):hover::after,
       // .navlink:not(.active):focus::after,
@@ -147,8 +154,7 @@
       background-color: black;
     }
 
-    .nav-link.active::after {
-    }
+    .nav-link.active::after {}
 
     // .nav-link:not(.active):hover::after,
     // .navlink:not(.active):focus::after,
@@ -159,12 +165,14 @@
 }
 
 .hamburger-icon-wrapper {
+  cursor: pointer;
   position: absolute;
+  top: 50%;
+  right: 10rem;
   z-index: 3;
 }
 
 .hamburger-icon-open {
-  cursor: pointer;
   position: relative;
   height: 1rem;
   width: 1.6rem;
@@ -184,7 +192,6 @@
 }
 
 .hamburger-icon-closed {
-  cursor: pointer;
   width: 1.6rem;
   height: 1rem;
 }

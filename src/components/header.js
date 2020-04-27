@@ -10,7 +10,7 @@ const Header = () => {
   const { width } = useWindowDimensions()
   return (
     <nav className={headerStyles.header}>
-      <div style={{ marginTop: "8rem" }}>
+      <div className={headerStyles.logo}>
         <Link to="/">
           <MainLogo></MainLogo>
         </Link>

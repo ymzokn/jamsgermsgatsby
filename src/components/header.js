@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
-import Button from "./button"
 import MainLogo from "./mainlogo"
 import Fixed from "./fixed.nav"
 import Hamburger from "./hamburger"
@@ -21,4 +20,5 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
+

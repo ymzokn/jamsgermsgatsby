@@ -7,7 +7,7 @@ import layoutStyles from "../components/layout.module.scss"
 const Page = props => {
   return (
     <div className={layoutStyles.pageLayout}>
-      <Header />
+      {typeof (window) !== "undefined" && <Header />}
       <div className={layoutStyles.content}>{props.children}</div>
       <Footer className={layoutStyles.footer} />
     </div>

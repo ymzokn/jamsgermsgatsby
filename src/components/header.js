@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
+import Button from "./button"
 import MainLogo from "./mainlogo"
 import Fixed from "./fixed.nav"
 import Hamburger from "./hamburger"
-import useWindowDimensions from "../hooks/useWindowDimensions.hook"
 import headerStyles from "./header.module.scss"
+import useWindowDimensions from "../hooks/useWindowDimensions.hook"
 
 const Header = () => {
   const { width } = useWindowDimensions()

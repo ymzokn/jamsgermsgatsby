@@ -1,12 +1,13 @@
-@import 'styles/variables.scss';
+@import "styles/variables.scss";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: $font, arial;
-    font-size: 1rem;
+  background-color: rgb(213, 228, 227);
+  font-family: $font, arial;
+  font-size: 1rem;
 }

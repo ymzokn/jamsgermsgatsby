@@ -10,7 +10,6 @@ export default () => (
         style={{
           height: "100rem",
           width: "100",
-          backgroundColor: "rgb(213, 228, 227)",
         }}
       ></div>
     </Page>

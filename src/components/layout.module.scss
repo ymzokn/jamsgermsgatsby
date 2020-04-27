@@ -1,13 +1,14 @@
 .page-layout {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
-    margin-top: 7.5vh;
-    min-height: 100vh;
+  margin-top: 20vh;
+  min-height: 100vh;
+  padding: 0 5rem;
 }
 
 .footer {
-    justify-self: flex-end;
+  justify-self: flex-end;
 }

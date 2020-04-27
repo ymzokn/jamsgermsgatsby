@@ -168,7 +168,6 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
-  right: 10rem;
   z-index: 3;
 }
 
@@ -218,12 +217,17 @@
 
 @media (max-width: 600px) {
 
-  .hamburger-icon-wrapper {
-    left: 5rem;
-    right: 0;
-  }
-
   .logo {
     display: none;
+  }
+
+  .hamburger-icon-wrapper {
+    left: 5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .hamburger-icon-wrapper {
+    right: 10rem;
   }
 }

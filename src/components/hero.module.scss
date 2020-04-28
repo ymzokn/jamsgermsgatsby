@@ -1,13 +1,12 @@
 @media (min-width: 800px) {
     .hero-wrapper {
-        position: absolute;
-        top: 5rem;
-        left: 0;
+        margin-top: 5rem;
+        position: relative;
         height: 45rem;
         width: 100%;
 
         .hero-text-wrapper {
-            width: 55%;
+            width: 45%;
             height: 90%;
             display: flex;
             flex-direction: column;
@@ -55,55 +54,58 @@
             }
         }
 
-        // .scroll-prompt {
-        //     font-size: .8rem;
-        //     font-weight: 500;
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     position: absolute;
-        //     top: calc(100vh - 5rem);
-        //     transform: translateY(-100%);
-        //     left: 12.5%;
+        .scroll-prompt {
+            font-size: .8rem;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: -1;
+            top: calc(100vh - 5rem);
+            transform: translateY(-100%);
+            left: 12.5%;
 
-        //     img {
-        //         transform: scale(.75);
-
-        //     }
-
-        //     p {
-        //         margin: 0 1rem;
-        //     }
-        // }
+            img {
+                transform: scale(.75);
+            }
+        }
     }
 }
 
 @media (max-width: 800px) {
+
     .hero-wrapper {
         margin-top: 5rem;
         height: calc(100vh - 5rem);
+        position: absolute;
         display: flex;
         flex-direction: column-reverse;
 
-        // .scroll-prompt {
-        //     display: none;
-        // }
+        .scroll-prompt {
+            display: none;
+        }
+
+        .hero-image-wrapper {
+            margin-top: 5rem;
+            height: 50vh;
+            width: 100%;
+        }
 
         .hero-text-wrapper {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            padding: 3rem 1rem;
             background-color: rgb(213, 228, 227);
 
             .hero-title {
-                font-size: 2rem;
+                font-size: 1rem;
             }
 
             .hero-description {
                 margin: 1rem 0;
-                font-size: .9rem;
+                font-size: .6rem;
                 text-transform: uppercase;
                 font-weight: 600;
             }
@@ -116,10 +118,5 @@
                 border-bottom: 1px solid lightgray;
             }
         }
-    }
-
-    .hero-wrapper,
-    .hero-text-wrapper {
-        position: relative;
     }
 }

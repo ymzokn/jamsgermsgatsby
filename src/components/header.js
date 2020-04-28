@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import MainLogo from "./mainlogo"
 import Fixed from "./fixed.nav"
@@ -11,7 +11,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   window.onscroll = function () {
-    if (window.pageYOffset > 80) {
+    if (window.pageYOffset > 0) {
       setScrolled(true);
     } else {
       setScrolled(false);

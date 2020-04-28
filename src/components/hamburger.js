@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import headerStyles from "./header.module.scss"
 import { Link } from "gatsby"
 import Button from "./button"
@@ -9,6 +9,7 @@ const Hamburger = props => {
     <div>
       <div
         className={headerStyles.hamburgerIconWrapper}
+        role="nav"
         onClick={() => setIsNavOpen(!isNavOpen)}
       >
         <div

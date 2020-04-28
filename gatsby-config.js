@@ -6,8 +6,13 @@
 const path = require(`path`)
 
 module.exports = {
+  siteMetadata: {
+    title: "Jam's Germs",
+    author: 'Okan Yılmaz'
+  },
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

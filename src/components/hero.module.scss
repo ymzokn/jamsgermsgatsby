@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .hero-wrapper {
         position: absolute;
         top: 5rem;
@@ -55,39 +55,39 @@
             }
         }
 
-        .scroll-prompt {
-            font-size: .8rem;
-            font-weight: 500;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: calc(100vh - 5rem);
-            transform: translateY(-100%);
-            left: 12.5%;
+        // .scroll-prompt {
+        //     font-size: .8rem;
+        //     font-weight: 500;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     position: absolute;
+        //     top: calc(100vh - 5rem);
+        //     transform: translateY(-100%);
+        //     left: 12.5%;
 
-            img {
-                transform: scale(.75);
+        //     img {
+        //         transform: scale(.75);
 
-            }
+        //     }
 
-            p {
-                margin: 0 1rem;
-            }
-        }
+        //     p {
+        //         margin: 0 1rem;
+        //     }
+        // }
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .hero-wrapper {
         margin-top: 5rem;
         height: calc(100vh - 5rem);
         display: flex;
         flex-direction: column-reverse;
 
-        .scroll-prompt {
-            display: none;
-        }
+        // .scroll-prompt {
+        //     display: none;
+        // }
 
         .hero-text-wrapper {
             display: flex;

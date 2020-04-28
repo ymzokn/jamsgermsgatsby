@@ -1,6 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
 import BackgroundSlider from 'gatsby-image-background-slider'
 
 const Slide = () => {

@@ -1,13 +1,27 @@
-.page-layout {
-  display: flex;
-  flex-direction: column;
+@media (min-width: 600px) {
+  .page-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    margin: 15rem 5rem 5rem 5rem;
+    min-height: 100vh;
+  }
+
+  .footer {
+    justify-self: flex-end;
+  }
 }
 
-.content {
-  margin: 15rem 5rem 5rem 5rem;
-  min-height: 100vh;
-}
+@media (max-width: 600px) {
+  .page-layout {
+    display: flex;
+    flex-direction: column;
+  }
 
-.footer {
-  justify-self: flex-end;
+  .content {
+    margin: 0;
+    padding: 0;
+  }
 }

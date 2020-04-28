@@ -9,7 +9,7 @@ const Hero = () => {
         <div className={heroStyles.heroWrapper}>
             <HeroText></HeroText>
             <HeroImage></HeroImage>
-            <div className={heroStyles.scrollPrompt}><img src={require("../../static/arrow-black-down.svg")} /><p>Scroll For More</p></div>
+            <div className={heroStyles.scrollPrompt}><img src={require("../../static/arrow-black-down.svg")} /><p>Scroll for more</p></div>
         </div>
     );
 }

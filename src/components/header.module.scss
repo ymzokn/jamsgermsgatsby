@@ -113,7 +113,8 @@
   background-color: rgb(213, 228, 227);
 
   .vertical-nav {
-    margin-top: 5rem;
+    margin-top: 50vh;
+    transform: translateY(-25vh);
     list-style-type: none;
     height: 100%;
     display: flex;

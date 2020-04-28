@@ -19,5 +19,12 @@ module.exports = {
         path: path.join(__dirname, `static`),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: path.join(__dirname, `static`, `homepage-slides`),
+      },
+    }
   ],
 }

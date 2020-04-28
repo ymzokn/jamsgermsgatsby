@@ -4,7 +4,7 @@ import heroStyles from "./hero.module.scss"
 
 const HeroImage = () => {
     return (<div className={heroStyles.heroImageWrapper}>
-        <Slide></Slide>
+        <div className={heroStyles.slideWrapper}><Slide></Slide></div>
     </div>);
 }
 

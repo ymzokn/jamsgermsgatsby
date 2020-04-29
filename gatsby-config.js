@@ -30,6 +30,24 @@ module.exports = {
         name: `backgrounds`,
         path: path.join(__dirname, `static`, `homepage-slides`),
       },
-    }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        commonmark: true,
+        footnotes: true,
+        pedantic: true,
+        gfm: true,
+        timeToRead: (wordCount, html, rawMD) => wordCount / 42
+      },
+    },
   ],
 }

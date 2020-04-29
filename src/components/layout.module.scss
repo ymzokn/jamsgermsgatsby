@@ -1,10 +1,10 @@
-@media (min-width: 800px) {
   .page-layout {
     display: flex;
     flex-direction: column;
   }
 
   .content {
+    margin-top: 15rem;
     // margin: 15rem 5rem 5rem 5rem;
     min-height: 100vh;
   }
@@ -12,16 +12,15 @@
   .footer {
     justify-self: flex-end;
   }
-}
 
-@media (max-width: 800px) {
-  .page-layout {
-    display: flex;
-    flex-direction: column;
-  }
+  // @media (max-width: 800px) {
+  //   .page-layout {
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
 
-  .content {
-    margin: 0;
-    padding: 0;
-  }
-}
+  //   .content {
+  //     margin: 0;
+  //     padding: 0;
+  //   }
+  // }

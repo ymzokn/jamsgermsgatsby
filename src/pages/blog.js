@@ -6,16 +6,15 @@ import Head from './../components/head';
 const Blog = () => {
 
   const data = useStaticQuery(graphql`
-  query BlogPostTitles{
-    allContentfulBlogPost {
+  query BlogPostTitles {
+    allContentfulBlogPost(sort: {fields: createdAt, order: DESC}) {
       edges {
         node {
-          description {
-            description
-          }
+          description
           fields {
             slug
           }
+          title
         }
       }
     }
@@ -25,8 +24,8 @@ const Blog = () => {
   return (
     <Page>
       <Head title="Blog"></Head>
-      <div>{data.allContentfulBlogPost.edges.map(post => {
-        return <div style={{ padding: "0 5rem" }}><Link to={`blog/${post.node.fields.slug}`}>{post.node.description.description}</Link></div>
+      <div style={{ margin: "-5rem 25%" }}>{data.allContentfulBlogPost.edges.map(post => {
+        return <div style={{ padding: "2.5rem 1rem", marginBottom: "2.5rem", boxShadow: "0 1px 2px lightgray" }}><Link style={{ textDecoration: "none" }} to={`blog/${post.node.fields.slug}`}><h2 style={{ color: "#3a3a3a" }}>{post.node.title}</h2><p style={{ color: "darkgray" }}>{post.node.description}</p></Link></div>
       })}</div>
     </Page>
   )

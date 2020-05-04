@@ -2,7 +2,7 @@ import React from "react"
 import Page from "./../layouts/page.layout"
 import Hero from "../components/hero"
 import Head from '../components/head'
-
+import LatestBlogPosts from './../components/latestBlogPosts';
 import "../main.scss"
 
 export default () => (
@@ -10,6 +10,7 @@ export default () => (
     <Page>
       <Head title="Home" />
       <Hero></Hero>
+      <LatestBlogPosts></LatestBlogPosts>
     </Page>
   </div >
 )

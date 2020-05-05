@@ -17,11 +17,7 @@ const LatestBlogPosts = () => {
           }
           header {
             localFile {
-              childImageSharp {
-                fluid(maxWidth: 500) {
-                  ...GatsbyImageSharpFluid_noBase64
-                }
-              }
+              publicURL
             }
           }
         }
@@ -29,7 +25,6 @@ const LatestBlogPosts = () => {
     }
   }
   `);
-  console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@", data.allContentfulBlogPost.edges[0].node);
 
 
   return (
@@ -38,17 +33,24 @@ const LatestBlogPosts = () => {
         <h3>Latest Blog Posts</h3>
       </div>
       {data.allContentfulBlogPost.edges.length > 0 && <div className={latestPostsStyles.latestPost}>
-        {data.allContentfulBlogPost.edges[0].node.title}
-        <div className={latestPostsStyles.recentPostWrapper}>
-          {/* <Img fluid={data.allContentfulBlogPost.edges[0].node.header.localFile.childImageSharp.fluid}></Img> */}
 
+        <div className={latestPostsStyles.recentPostWrapper}>
+          <div className={latestPostsStyles.recentPostWrapper} style={{ background: `url(${data.allContentfulBlogPost.edges[0].node.header.localFile.publicURL}) no-repeat center center fixed`, backgroundSize: "cover" }}>
+          </div>
         </div>
       </div>}
       {data.allContentfulBlogPost.edges.length > 1 && <div className={latestPostsStyles.previousPost}>
-        {data.allContentfulBlogPost.edges[1].node.title}
+
+        <div className={latestPostsStyles.recentPostWrapper}>
+          <div className={latestPostsStyles.recentPostWrapper} style={{ background: `url(${data.allContentfulBlogPost.edges[1].node.header.localFile.publicURL}) no-repeat center center fixed`, backgroundSize: "cover" }}>
+          </div>
+        </div>
       </div>}
       {data.allContentfulBlogPost.edges.length > 2 && <div className={latestPostsStyles.earliestPost}>
-        {data.allContentfulBlogPost.edges[2].node.title}
+
+        <div className={latestPostsStyles.recentPostWrapper} style={{ background: `url(${data.allContentfulBlogPost.edges[2].node.header.localFile.publicURL}) no-repeat center center fixed`, backgroundSize: "cover" }}>
+          {/* {data.allContentfulBlogPost.edges[2].node.header.localFile && <Img fluid={data.allContentfulBlogPost.edges[2].node.header.localFile.childImageSharp.fluid}>{data.allContentfulBlogPost.edges[2].node.title}</Img>} */}
+        </div>
       </div>}
     </section>
   )

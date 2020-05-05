@@ -1,0 +1,33 @@
+.blog-list {
+  list-style-type: none;
+  margin: -5rem 20vw 0 20vw;
+
+  li:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    // border-top: 1rem solid hsl(176, 22, 86);
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: stretch;
+      color: #3a3a3a;
+      .blog-list-img {
+        margin-right: 1rem;
+      }
+
+      .blog-list-text {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+    }
+  }
+}

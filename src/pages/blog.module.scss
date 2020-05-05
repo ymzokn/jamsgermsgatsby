@@ -35,7 +35,6 @@
 
       .blog-img {
         margin-right: 1rem;
-        min-width: 20vw;
       }
 
       .post-img {
@@ -55,5 +54,13 @@
     .post-description {
       color: hsl(175, 22, 22);
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-post a {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
   }
 }

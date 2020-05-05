@@ -1,0 +1,31 @@
+.post-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1rem;
+}
+
+.post-header {
+  max-height: 50vh;
+  width: 100%;
+}
+
+.back-button {
+  font-size: 1.2rem;
+  color: hsl(175, 22, 22);
+  cursor: pointer;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.post-details {
+  display: flex;
+
+  p {
+    margin-left: 0.25rem;
+  }
+}
+
+.post-text {
+  margin-top: 2rem;
+}

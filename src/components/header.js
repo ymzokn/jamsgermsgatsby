@@ -8,16 +8,15 @@ import useWindowDimensions from "../hooks/useWindowDimensions.hook"
 
 const Header = () => {
   const { width } = useWindowDimensions()
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState((window.location.pathname !== "/"));
 
   window.onscroll = function () {
-    if (window.pageYOffset > 0) {
+    if ((window.location.pathname !== "/") || (window.pageYOffset > 20)) {
       setScrolled(true);
     } else {
       setScrolled(false);
     }
   }
-
 
   return (
     <nav className={headerStyles.header}>

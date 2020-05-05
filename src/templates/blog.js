@@ -66,9 +66,9 @@ const Blog = props => {
               </p>
             </div>
           </div>
-          <section className={postStyles.postText}>
+          <article className={postStyles.postText}>
             {documentToReactComponents(props.data.contentfulBlogPost.body.json)}
-          </section>
+          </article>
         </div>
       </div>
     </Page>

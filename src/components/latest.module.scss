@@ -1,14 +1,7 @@
 .posts-wrapper {
-  margin-top: 1rem;
-  height: 75vh;
   background: linear-gradient(to bottom, white, hsl(176, 22, 86));
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
 
   .posts-text {
-    grid-row: 1/17;
-    grid-column: 1/9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,26 +9,48 @@
   }
 
   .latest-post {
-    grid-row: 1/9;
-    grid-column: 9/15;
     // background-color: lightgreen;
   }
 
   .previous-post {
-    grid-row: 9/17;
-    grid-column: 9/13;
     display: flex;
     // background-color: lightpink;
   }
 
   .earliest-post {
-    grid-row: 9/17;
-    grid-column: 13/17;
     // background-color: lightsalmon;
   }
 
   .recent-post-wrapper {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .posts-wrapper {
+    display: grid;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+
+    .posts-text {
+      grid-column: 1 / 9;
+      grid-row: 1 / 17;
+    }
+
+    .latest-post {
+      grid-column: 9 / 15;
+      grid-row: 1 / 9;
+    }
+
+    .previous-post {
+      grid-column: 9 / 13;
+      grid-row: 9 / 17;
+    }
+
+    .earliest-post {
+      grid-column: 13 / 17;
+      grid-row: 9 / 17;
+    }
   }
 }

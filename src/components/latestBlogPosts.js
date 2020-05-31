@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import latestPostsStyles from "./latest.module.scss"
 import Img from "gatsby-image"
+import heroStyles from "./hero.module.scss"
 
 const LatestBlogPosts = () => {
   const data = useStaticQuery(graphql`
@@ -35,56 +36,27 @@ const LatestBlogPosts = () => {
   return (
     <section className={latestPostsStyles.postsWrapper}>
       <div className={latestPostsStyles.postsText}>
-        <h3>Latest Blog Posts</h3>
+        <h1 className={heroStyles.heroTitle}>Latest Blog Posts</h1>
       </div>
-      {data.allContentfulBlogPost.edges.length > 0 && (
-        <div className={latestPostsStyles.latestPost}>
-          <div className={latestPostsStyles.recentPostWrapper}>
-            <Link
-              to={`/blog/${data.allContentfulBlogPost.edges[0].node.fields.slug}`}
-            >
-              <Img
-                fluid={
-                  data.allContentfulBlogPost.edges[0].node.header.localFile
-                    .childImageSharp.fluid
-                }
-              ></Img>
-            </Link>
+      {data.allContentfulBlogPost.edges.map(post => {
+        return (
+          <div className={latestPostsStyles.post}>
+            <div className={latestPostsStyles.recentPostWrapper}>
+              <Link to={`/blog/${post.node.fields.slug}`}>
+                <Img
+                  style={{ height: "100%" }}
+                  fluid={post.node.header.localFile.childImageSharp.fluid}
+                ></Img>
+                <div className={latestPostsStyles.postText}>
+                  <p
+                    className={latestPostsStyles.postTitle}
+                  >{`${post.node.title}`}</p>
+                </div>
+              </Link>
+            </div>
           </div>
-        </div>
-      )}
-      {data.allContentfulBlogPost.edges.length > 1 && (
-        <div className={latestPostsStyles.previousPost}>
-          <div className={latestPostsStyles.recentPostWrapper}>
-            <Link
-              to={`/blog/${data.allContentfulBlogPost.edges[1].node.fields.slug}`}
-            >
-              <Img
-                fluid={
-                  data.allContentfulBlogPost.edges[1].node.header.localFile
-                    .childImageSharp.fluid
-                }
-              ></Img>
-            </Link>
-          </div>
-        </div>
-      )}
-      {data.allContentfulBlogPost.edges.length > 2 && (
-        <div className={latestPostsStyles.earliestPost}>
-          <div className={latestPostsStyles.recentPostWrapper}>
-            <Link
-              to={`/blog/${data.allContentfulBlogPost.edges[2].node.fields.slug}`}
-            >
-              <Img
-                fluid={
-                  data.allContentfulBlogPost.edges[2].node.header.localFile
-                    .childImageSharp.fluid
-                }
-              ></Img>
-            </Link>
-          </div>
-        </div>
-      )}
+        )
+      })}
     </section>
   )
 }

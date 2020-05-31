@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import BackgroundSlider from 'gatsby-image-background-slider'
+import BackgroundSlider from "gatsby-image-background-slider"
 
 const Slide = () => {
   // const [currentImg, setCurrentImg] = useState(0);
@@ -23,24 +23,27 @@ const Slide = () => {
   //     }
   // `)
 
-  return <BackgroundSlider
-    query={useStaticQuery(graphql`
-    query {
-      backgrounds: allFile(filter: {relativeDirectory: {eq: "homepage-slides"}}) {
-        nodes {
-          relativePath
-          childImageSharp {
-            fluid (maxWidth: 4000, quality: 100){
-              ...GatsbyImageSharpFluid
+  return (
+    <BackgroundSlider
+      query={useStaticQuery(graphql`
+        query {
+          backgrounds: allFile(
+            filter: { relativeDirectory: { eq: "homepage-slides" } }
+          ) {
+            nodes {
+              relativePath
+              childImageSharp {
+                fluid(maxWidth: 4000, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }
-      }
-    }
-  `)}
-  />
+      `)}
+    />
+  )
   // return (<Img fixed={data.allFile.edges[currentImg].node.childImageSharp.fixed}></Img >)
-
 }
 
-export default Slide;
+export default Slide

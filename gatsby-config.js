@@ -12,15 +12,15 @@ module.exports = {
   },
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: process.env.ANALYTICS_ID,
-        head: true,
+        head: false,
         anonymize: true,
       },
     },
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

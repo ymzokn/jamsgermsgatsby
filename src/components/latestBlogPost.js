@@ -47,9 +47,6 @@ const LatestBlogPost = () => {
           }
         ></Img>
         <div className={latestBlogPostStyles.latestTitle}></div>
-        {/* <div>
-          <p>{`${data.allContentfulBlogPost.edges[0].node.title}`}</p>
-        </div> */}
       </Link>
     </section>
   )

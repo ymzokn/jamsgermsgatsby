@@ -1,17 +1,20 @@
-import React from 'react';
-import HeroText from './herotext';
-import HeroImage from './heroimage';
-
-import heroStyles from "./hero.module.scss";
+import React from "react"
+import HeroText from "./herotext"
+import HeroImage from "./heroimage"
+import LatestBlogPost from "./latestBlogPost"
+import heroStyles from "./hero.module.scss"
 
 const Hero = () => {
-    return (
-        <div className={heroStyles.heroWrapper}>
-            <HeroText></HeroText>
-            <HeroImage></HeroImage>
-            <div className={heroStyles.scrollPrompt}><img src={require("../../static/arrow-black-down.svg")} /><p>Scroll for more</p></div>
-        </div>
-    );
+  return (
+    <div className={heroStyles.heroWrapper}>
+      <HeroText></HeroText>
+      <HeroImage></HeroImage>
+      <div className={heroStyles.latestWrapper}>
+        <LatestBlogPost></LatestBlogPost>
+        <div className={heroStyles.latestTitle}></div>
+      </div>
+    </div>
+  )
 }
 
-export default Hero;
+export default Hero

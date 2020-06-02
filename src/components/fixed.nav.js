@@ -24,7 +24,7 @@ const Fixed = props => {
           Blog
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link
           className={headerStyles.navLink}
           to="/Identification"
@@ -32,8 +32,8 @@ const Fixed = props => {
         >
           Identification
         </Link>
-      </li>
-      <li>
+      </li> */}
+      {/* <li>
         <Link
           className={headerStyles.navLink}
           to="/My Work"
@@ -41,8 +41,8 @@ const Fixed = props => {
         >
           My Work
         </Link>
-      </li>
-      <li>
+      </li> */}
+      {/* <li>
         <Link
           className={headerStyles.navLink}
           to="/Shop"
@@ -50,11 +50,11 @@ const Fixed = props => {
         >
           Shop
         </Link>
-      </li>
+      </li> */}
       <li>
-        <Link to="/Donate">
+        <a href="https://www.patreon.com/jam_and_germs" target="_blank">
           <Button text="Donate" variant="primary"></Button>
-        </Link>
+        </a>
       </li>
     </ul>
   )

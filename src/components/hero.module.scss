@@ -2,8 +2,6 @@
 
 .hero-wrapper {
   // margin-top: 5rem;
-  position: relative;
-  min-height: calc(100vh - 5rem);
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);

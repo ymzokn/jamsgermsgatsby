@@ -8,36 +8,48 @@ a {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   padding: 5vh 0;
 
   .blog-post {
-    margin: 2rem 0;
-    flex: 1 1 40%;
+    margin: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20rem;
   }
 
-  .blog-post-wrapper {
+  .post-img {
     display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .post-text {
-    padding: 0.5rem;
+    width: 60%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     color: hsl(175, 22, 22);
-
-    .post-description {
-      margin-top: 1rem;
-      max-width: 20rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+    margin-top: 1rem;
+    text-align: center;
 
     .post-date-wrapper {
       display: flex;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-post {
+    margin: 2rem 0;
+  }
+
+  .post-text {
+    // font-size: 0.6rem;
+    text-align: center;
   }
 }

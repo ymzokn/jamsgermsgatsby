@@ -7,13 +7,12 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { GoCalendar } from "react-icons/go"
 import { navigate } from "@reach/router"
 import postStyles from "./post.module.scss"
-import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io"
 
 export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(fields: { slug: { eq: $slug } }) {
       title
-      description
       header {
         localFile {
           childImageSharp {
@@ -36,7 +35,8 @@ const Blog = props => {
     <Page>
       <div className={postStyles.postWrapper}>
         <p className={postStyles.backButton} onClick={() => navigate(-1)}>
-          <IoIosArrowBack />Back
+          <IoIosArrowBack />
+          Back
         </p>
         <div className={postStyles.post}>
           <Head title={props.data.contentfulBlogPost.title}></Head>
@@ -48,8 +48,9 @@ const Blog = props => {
             }
           />
           <div className={postStyles.postBody}>
-            <h1 className={postStyles.postTitle}>{props.data.contentfulBlogPost.title}</h1>
-            <h4 className={postStyles.postDescription}>{props.data.contentfulBlogPost.description}</h4>
+            <h1 className={postStyles.postTitle}>
+              {props.data.contentfulBlogPost.title}
+            </h1>
             <div className={postStyles.postDetails}>
               <GoCalendar
                 style={{

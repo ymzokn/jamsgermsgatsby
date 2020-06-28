@@ -12,7 +12,6 @@ const Blog = () => {
       allContentfulBlogPost(sort: { fields: createdAt, order: DESC }) {
         edges {
           node {
-            description
             fields {
               slug
             }
@@ -21,7 +20,7 @@ const Blog = () => {
             header {
               localFile {
                 childImageSharp {
-                  fixed(width: 200, height: 150) {
+                  fixed(width: 300, height: 200) {
                     ...GatsbyImageSharpFixed_noBase64
                   }
                 }
@@ -52,20 +51,6 @@ const Blog = () => {
                 <div className={blogListStyles.postText}>
                   <div>
                     <h3>{post.node.title}</h3>
-                    <p className={blogListStyles.postDescription}>
-                      {post.node.description}
-                    </p>
-                  </div>
-                  <div className={blogListStyles.postDateWrapper}>
-                    <GoCalendar
-                      style={{
-                        width: "1.2rem",
-                        height: "1.2rem",
-                        color: "gray",
-                        margin: "0 .25rem",
-                      }}
-                    />
-                    <p>{new Date(post.node.createdAt).toLocaleDateString()}</p>
                   </div>
                 </div>
               </Link>

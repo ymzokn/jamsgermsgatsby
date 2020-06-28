@@ -14,7 +14,6 @@ const LatestBlogPosts = () => {
         edges {
           node {
             title
-            description
             fields {
               slug
             }

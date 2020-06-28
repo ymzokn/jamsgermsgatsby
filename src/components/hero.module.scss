@@ -2,13 +2,14 @@
 
 .hero-wrapper {
   // margin-top: 5rem;
+  margin-top: 5vh;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
   grid-gap: 2vh;
-  height: calc(95vh);
-  max-height: calc(95vh);
-  min-height: calc(95vh);
+  height: calc(90vh);
+  max-height: calc(90vh);
+  min-height: calc(90vh);
 
   .hero-text-wrapper {
     grid-column: 1/8;

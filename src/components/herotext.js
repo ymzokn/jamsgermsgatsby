@@ -14,11 +14,7 @@ const HeroText = () => {
         back on. Scram, McFly. A bolt of lightning, unfortunately, you never
         know when or where it's ever gonna strike. Jennifer, oh are you a sight
         for sore eyes. Let me look at you. Yeah, exactly. That ain't no
-        airplane, look. What did I just say? Well, now we gotta sneak this back
-        into my laboratory, we've gotta get you home. Oh, just a little weather
-        experiment. Not a word, not a word, not a word now. Quiet, uh,
-        donations, you want me to make a donation to the coast guard youth
-        auxiliary?
+        airplane, look. What did I just say?
       </p>
       <div className={heroStyles.separator}></div>
       <div className={heroStyles.button}>

@@ -6,16 +6,14 @@ const MainLogo = () => {
   const data = useStaticQuery(graphql`
     query LogoImageQuery {
       file(relativePath: { eq: "jg-logo-clipped.png" }) {
-        childImageSharp {
-          fixed(width: 200, height: 200, quality: 100) {
-            ...GatsbyImageSharpFixed_noBase64
-          }
-        }
+        publicURL
       }
     }
   `)
-
-  return <Img fixed={data.file.childImageSharp.fixed} />
+  {
+    /* <Img fixed={data.file.childImageSharp.fixed} /> */
+  }
+  return <img style={{ height: "100%" }} src={`${data.file.publicURL}`}></img>
 }
 
 export default MainLogo

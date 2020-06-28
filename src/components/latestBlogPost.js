@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
 import latestBlogPostStyles from "./latest.module.scss"
 
 // import latestPostStyles from "./latest.module.scss"
@@ -16,17 +15,13 @@ const LatestBlogPost = () => {
           node {
             title
             description
-            fields {
-              slug
-            }
             header {
               localFile {
-                childImageSharp {
-                  fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid_noBase64
-                  }
-                }
+                url
               }
+            }
+            fields {
+              slug
             }
           }
         }
@@ -43,8 +38,8 @@ const LatestBlogPost = () => {
         <div
           className={latestBlogPostStyles.clipText}
           style={{
-            backgroundImage:
-              "url('http://images.ctfassets.net/4wmk22qd16cj/25y5HJoqvN7guzOyoAfKu8/d07cc361cbb307fa7113f28d6461bf18/Flamentous_Cyanobacteria_and_Algae-min.jpg')",
+            backgroundImage: `url(${data.allContentfulBlogPost.edges[0].node.header.localFile.url})`,
+            // "url('http://images.ctfassets.net/4wmk22qd16cj/25y5HJoqvN7guzOyoAfKu8/d07cc361cbb307fa7113f28d6461bf18/Flamentous_Cyanobacteria_and_Algae-min.jpg')",
           }}
         >
           LATEST BLOG POST

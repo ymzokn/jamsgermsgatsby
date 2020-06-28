@@ -22,7 +22,7 @@ const HeroText = () => {
       </p>
       <div className={heroStyles.separator}></div>
       <div className={heroStyles.button}>
-        <Button variant="primary_sliding" text="Donate to Educate!"></Button>
+        <Button variant="primary_sliding" text="Donate!"></Button>
       </div>
     </div>
   )

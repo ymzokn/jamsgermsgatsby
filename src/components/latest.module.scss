@@ -1,3 +1,7 @@
+.latest-wrapper {
+  height: 100%;
+}
+
 .clip-text {
   font-size: 1.6rem;
   font-weight: bold;
@@ -7,12 +11,17 @@
   text-align: center;
   color: #fff;
   -webkit-background-clip: text;
-  width: 100%;
+  display: block;
+  height: 100%;
   -webkit-text-fill-color: transparent;
-  padding: 2.5rem 2.5rem 22.5rem 2.5rem;
+  padding: 2.5vh 2.5vh 22.5vh 2.5vh;
   background-position: center;
   background-size: cover;
   word-spacing: 50rem;
+}
+
+.latest-link {
+  text-decoration: none;
 }
 
 .clip-text:before,

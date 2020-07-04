@@ -9,7 +9,7 @@ const HeroText = () => {
       {/* <h1 className={heroStyles.heroTitle}>Jam's Germs</h1> */}
       <p className={heroStyles.heroDescription}>
         Hey it's James! And these are Jam's Germs! James is a funny guy who got
-        lost in life and found his passion in pond scum🔬
+        lost in life and found his passion in pond scum 🔬
       </p>
       <div className={heroStyles.separator}></div>
       {/* <div className={heroStyles.button}>

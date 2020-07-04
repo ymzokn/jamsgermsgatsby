@@ -1,8 +1,8 @@
 import React from "react"
 import Header from "./../components/header"
-import { Provider as SubscriptionProvider } from "../context/subscriptionContext"
+import { Provider as SubscriptionProvider } from "../context/SubscriptionContext"
 import layoutStyles from "../components/layout.module.scss"
-import SubscriptionPrompt from "../components/subscriptionPrompt"
+import SubscriptionPrompt from "../components/SubscriptionPrompt"
 
 const Page = props => {
   return (

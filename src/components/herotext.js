@@ -8,13 +8,8 @@ const HeroText = () => {
     <div className={heroStyles.heroTextWrapper}>
       {/* <h1 className={heroStyles.heroTitle}>Jam's Germs</h1> */}
       <p className={heroStyles.heroDescription}>
-        Weight has nothing to do with it. George, aren't you gonna kiss me? Will
-        you take care of that? Yeah, I think it's a major embarrassment having
-        an uncle in prison. Who are you? My god, it's my mother. Put your pants
-        back on. Scram, McFly. A bolt of lightning, unfortunately, you never
-        know when or where it's ever gonna strike. Jennifer, oh are you a sight
-        for sore eyes. Let me look at you. Yeah, exactly. That ain't no
-        airplane, look. What did I just say?
+        Hey it's James! And these are Jam's Germs! James is a funny guy who got
+        lost in life and found his passion in pond scum🔬
       </p>
       <div className={heroStyles.separator}></div>
       {/* <div className={heroStyles.button}>

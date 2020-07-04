@@ -57,5 +57,11 @@ module.exports = {
         timeToRead: (wordCount, html, rawMD) => wordCount / 42,
       },
     },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint: process.env.MAILCHIMP_ENDPOINT,
+      },
+    },
   ],
 }

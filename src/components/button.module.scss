@@ -27,3 +27,28 @@
 .primary_sliding:hover {
   padding: 1rem 1rem 1rem 3rem;
 }
+
+.primary:active,
+.primary:focus {
+  outline: none;
+}
+
+.secondary {
+  border: 1px solid #32abe2;
+  padding: 0.5rem 1rem;
+  color: #32abe2;
+  cursor: pointer;
+  font-family: $font;
+  transition: all 0.2s;
+}
+
+.secondary:focus,
+.secondary:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.secondary:active,
+.secondary:focus {
+  outline: none;
+}

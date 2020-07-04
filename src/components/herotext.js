@@ -17,9 +17,9 @@ const HeroText = () => {
         airplane, look. What did I just say?
       </p>
       <div className={heroStyles.separator}></div>
-      <div className={heroStyles.button}>
-        <Button variant="primary_sliding" text="Donate!"></Button>
-      </div>
+      {/* <div className={heroStyles.button}>
+        <Button variant="primary" text="Donate!"></Button>
+      </div> */}
     </div>
   )
 }

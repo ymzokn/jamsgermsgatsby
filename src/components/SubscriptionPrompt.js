@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react"
-import { Context as SubscriptionContext } from "../context/subscriptionContext"
+import { Context as SubscriptionContext } from "../context/SubscriptionContext"
 import promptStyles from "../components/prompt.module.scss"
 import { IoMdClose } from "react-icons/io"
 import Button from "./button"

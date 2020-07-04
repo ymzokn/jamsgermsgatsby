@@ -76,6 +76,8 @@
       justify-content: center;
       background-color: rgb(213, 228, 227);
       padding: 7.5vh 7.5vw;
+      background: linear-gradient(to right, hsl(176, 22, 80), hsl(176, 22, 95));
+    // background-color: hsl(176, 22, 86);
 
       .hero-description {
         margin: 1rem 0;

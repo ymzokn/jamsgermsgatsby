@@ -1,7 +1,6 @@
 .contact-list-wrapper {
   margin-top: 0.5rem;
   width: 100%;
-  height: 50vh;
   background: #c9d6ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
@@ -18,6 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 
   .contact-list {
     height: 50%;
@@ -27,6 +27,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+
 
     .contact {
       text-decoration: none;
@@ -40,7 +42,6 @@
     }
 
     .contact :not(p) {
-      margin-bottom: 1rem;
       font-size: 4rem;
     }
 
@@ -86,7 +87,7 @@
     flex-direction: column;
   }
 
-  .contact {
-    margin-bottom: 2rem;
+  .contact:not(:last-child) {
+    margin-bottom: 2rem!important;
   }
 }

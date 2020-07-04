@@ -50,6 +50,11 @@
       transition: all 0.2s;
     }
 
+    .contact-instagram {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
     .contact:hover .contact-instagram,
     .contact:focus .contact-instagram {
       color: white;

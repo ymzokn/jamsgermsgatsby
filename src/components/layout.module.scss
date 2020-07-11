@@ -6,26 +6,12 @@
 .content {
   overflow: hidden;
   padding-top: 5vh;
-  // margin-top: 10vh;
-  // margin: 15rem 5rem 5rem 5rem;
   min-height: 100vh;
 }
 
 .footer {
   justify-self: flex-end;
 }
-
-// @media (max-width: 800px) {
-//   .page-layout {
-//     display: flex;
-//     flex-direction: column;
-//   }
-
-//   .content {
-//     margin: 0;
-//     padding: 0;
-//   }
-// }
 
 @media (min-width: 1281px) {
   
@@ -86,4 +72,10 @@
   
   //CSS
   
+}
+
+@media (max-width: 767px) {
+  .content {
+    padding-top: 5rem;
+  }
 }

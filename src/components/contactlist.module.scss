@@ -58,7 +58,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   .contact-list {
     max-width: 100%;
     min-width: 100%;
@@ -66,7 +66,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .contact-list {
     flex-direction: column;
   }

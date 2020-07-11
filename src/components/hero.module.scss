@@ -91,7 +91,7 @@
       align-items: flex-start;
       justify-content: center;
       background-color: rgb(213, 228, 227);
-      padding: 7.5vh 7.5vw;
+      padding: 7.5rem 7.5vw;
       background: linear-gradient(to right, hsl(176, 22, 80), hsl(176, 22, 95));
     // background-color: hsl(176, 22, 86);
 
@@ -105,11 +105,11 @@
     .hero-image-wrapper {
       order: 2;
       width: 100vw;
-      height: 80rem;
+      height: 40rem;
     }
 
     .slide-wrapper {
-      max-height: 50rem;
+      max-height: 25rem;
     }
   }
 

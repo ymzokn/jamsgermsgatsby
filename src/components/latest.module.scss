@@ -57,6 +57,12 @@
   background-color: hsla(0, 0%, 100%, 0.8);
 }
 
+@media (max-width: 1000px) {
+.latest-wrapper {
+  height: 25rem;
+}
+}
+
 // @media (min-width: 400px) {
 //   .clip-text {
 //     font-size: 2rem;

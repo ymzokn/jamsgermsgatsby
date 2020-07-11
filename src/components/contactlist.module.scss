@@ -1,19 +1,5 @@
 .contact-list-wrapper {
-  margin-top: 0.5rem;
   width: 100%;
-  background: #c9d6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #fff 5%,
-    #e2e2e2,
-    #c9d6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #fff 5%,
-    #e2e2e2,
-    #c9d6ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,12 +8,10 @@
   .contact-list {
     height: 50%;
     width: 50%;
-    border: 2px solid whitesmoke;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
 
 
     .contact {
@@ -42,7 +26,7 @@
     }
 
     .contact :not(p) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     .contact:hover .contact-youtube,

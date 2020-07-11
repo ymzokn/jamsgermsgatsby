@@ -1,7 +1,7 @@
 import React from "react"
 import Button from "./button"
-
 import heroStyles from "./hero.module.scss"
+import ContactList from "./contactList"
 
 const HeroText = () => {
   return (
@@ -15,6 +15,7 @@ const HeroText = () => {
       {/* <div className={heroStyles.button}>
         <Button variant="primary" text="Donate!"></Button>
       </div> */}
+      <ContactList/>
     </div>
   )
 }

@@ -11,7 +11,7 @@ export default () => (
       <Head title="Home" />
       <Hero></Hero>
       {/* <LatestBlogPosts></LatestBlogPosts> */}
-      <ContactList />
+      {/* <ContactList /> */}
     </Page>
   </div>
 )

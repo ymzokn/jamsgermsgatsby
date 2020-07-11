@@ -1,9 +1,20 @@
 import React from "react"
-import { IoLogoYoutube } from "react-icons/io"
 import contactListStyles from "./contactlist.module.scss"
-import { IoLogoInstagram } from "react-icons/io"
+import { graphql, useStaticQuery } from "gatsby"
+
+
 
 const ContactList = () => {
+  const data = useStaticQuery(graphql`
+  query InstagramLogoQuery {
+    instagram: file(relativePath: { eq: "instagram_logo.png" }) {
+      publicURL
+  },
+  youtube:file(relativePath: {eq: "youtube_logo.png"}) {
+    publicURL
+  }
+  }
+  `)
   return (
     <div className={contactListStyles.contactListWrapper}>
       <div className={contactListStyles.contactList}>
@@ -13,8 +24,8 @@ const ContactList = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoLogoInstagram className={contactListStyles.contactInstagram} />
-          <p>Follow me on Instagram!</p>
+          
+          <img alt="instagram-logo" src={`${data.instagram.publicURL}`}></img>
         </a>
         <a
           className={contactListStyles.contact}
@@ -22,8 +33,7 @@ const ContactList = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoLogoYoutube className={contactListStyles.contactYoutube} />
-          <p>Check out my Youtube!</p>
+          <img alt="youtube-logo" src={`${data.youtube.publicURL}`}></img>
         </a>
       </div>
     </div>

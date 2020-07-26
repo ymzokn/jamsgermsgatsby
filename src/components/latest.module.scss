@@ -3,7 +3,7 @@
 }
 
 .clip-text {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 1;
   position: relative;
@@ -12,7 +12,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   height: 100%;
-  padding: 25% 25%;
+  padding: 10vw 10vw;
   background-position: center;
   background-size: cover;
   word-spacing: 50rem;
@@ -50,22 +50,40 @@
   // right: 2.5vh;
   // bottom: 22vh;
   // left: 2.5vh;
-  top: 25%;
-  bottom: 25%;
-  left: 25%;
-  right: 25%;
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
   background-color: hsla(0, 0%, 100%, 0.8);
 }
 
+// @media (max-width: 1000px) {
+// .latest-wrapper {
+//   height: 25rem;
+// }
+// }
+
 @media (max-width: 1000px) {
-.latest-wrapper {
-  height: 25rem;
-}
+  .clip-text {
+    font-size: 10vw;
+  }
 }
 
-// @media (min-width: 400px) {
+// @media (min-width: 767px) {
 //   .clip-text {
 //     font-size: 2rem;
+//   }
+// }
+
+// @media (min-width: 1024px) {
+//   .clip-text {
+//     font-size: 2.6rem;
+//   }
+// }
+
+// @media (min-width: 1280px) {
+//   .clip-text {
+//     font-size: 3rem;
 //   }
 // }
 

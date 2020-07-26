@@ -1,60 +1,47 @@
 .contact-list-wrapper {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 
   .contact-list {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
 
     .contact {
       text-decoration: none;
       color: #3a3a3a;
-      margin: 0 auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin: 1rem 1rem;
     }
 
-    .contact :not(p) {
-      font-size: 3rem;
-    }
-
-    .contact:hover .contact-youtube,
-    .contact:focus .contact-youtube {
-      color: rgb(255, 0, 0);
-      transition: all 0.2s;
-    }
-
-    .contact-instagram {
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .contact:hover .contact-instagram,
-    .contact:focus .contact-instagram {
-      color: white;
-      background: #d6249f;
-      background: radial-gradient(
-        circle at 30% 107%,
-        #fdf497 0%,
-        #fdf497 5%,
-        #fd5949 45%,
-        #d6249f 60%,
-        #285aeb 90%
-      );
-      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
-      transition: all 0.2s;
-    }
+    // .contact:hover,
+    // .contact:focus {
+    //   color: white;
+    //   background: #d6249f;
+    //   background: radial-gradient(
+    //     circle at 30% 107%,
+    //     #fdf497 0%,
+    //     #fdf497 5%,
+    //     #fd5949 45%,
+    //     #d6249f 60%,
+    //     #285aeb 90%
+    //   );
+    //   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+    //   transition: all 0.2s;
+    // }
   }
 }
 
@@ -66,12 +53,12 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .contact-list {
-    flex-direction: column;
-  }
+// @media (max-width: 480px) {
+//   .contact-list {
+//     flex-direction: column;
+//   }
 
-  .contact:not(:last-child) {
-    margin-bottom: 2rem!important;
-  }
-}
+//   .contact:not(:last-child) {
+//     margin-bottom: 2rem!important;
+//   }
+// }

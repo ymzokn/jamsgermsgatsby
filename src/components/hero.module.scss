@@ -24,6 +24,7 @@
     align-items: flex-start;
     justify-content: center;
     padding: 7.5vw;
+    position: relative;
 
     .hero-title {
       font-size: 3.5rem;
@@ -74,7 +75,7 @@
 
 @media (max-width: 1000px) {
   .hero-wrapper {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     grid-gap: 2rem;
     display: flex;
     flex-direction: column;

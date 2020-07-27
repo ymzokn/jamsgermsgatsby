@@ -53,7 +53,7 @@ const SubscriptionPrompt = () => {
             />
             <Button
               variant="primary"
-              text="Subscribe"
+              text="SUBSCRIBE"
               onClick={() => subscribe(email)}
             ></Button>
           </div>

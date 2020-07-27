@@ -116,3 +116,20 @@
     order: 3;
   }
 }
+
+@media (max-width: 480px) {
+
+  .gatsby-image-wrapper {
+    position: relative!important;;
+  }
+
+  .hero-image-wrapper {
+    background: linear-gradient(to bottom, rgba(0, 0, 0 ,0), rgba(0, 0, 0, 0.1), rgba(0,0,0,0));
+  }
+
+  .hero-image-wrapper img {
+    transform: rotate(90deg) scale(1.5);
+    object-fit: contain!important;
+    width: 100vw!important;
+  }
+}

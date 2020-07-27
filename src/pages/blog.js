@@ -1,10 +1,11 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import { Provider as SubscriptionProvider } from "../context/SubscriptionContext"
 import Page from "../layouts/page.layout"
 import Head from "./../components/head"
 import Img from "gatsby-image"
 import blogListStyles from "./blog.module.scss"
-import { GoCalendar } from "react-icons/go"
+import SubscriptionPrompt from "../components/SubscriptionPrompt"
 
 const Blog = () => {
   const data = useStaticQuery(graphql`
@@ -34,6 +35,8 @@ const Blog = () => {
 
   return (
     <Page>
+    <SubscriptionProvider>
+      <SubscriptionPrompt />
       <Head title="Blog"></Head>
       <section className={blogListStyles.postListWrapper}>
         {data.allContentfulBlogPost.edges.map(post => {
@@ -58,6 +61,7 @@ const Blog = () => {
           )
         })}
       </section>
+    </SubscriptionProvider>
     </Page>
   )
 }

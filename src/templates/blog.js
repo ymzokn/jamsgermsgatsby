@@ -1,7 +1,9 @@
 import React from "react"
+import { Provider as SubscriptionProvider } from "../context/SubscriptionContext"
 import { graphql, useStaticQuery } from "gatsby"
 import Page from "./../layouts/page.layout"
 import Head from "./../components/head"
+import SubscriptionPrompt from "../components/SubscriptionPrompt"
 import Img from "gatsby-image"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { GoCalendar } from "react-icons/go"
@@ -33,6 +35,8 @@ export const query = graphql`
 const Blog = props => {
   return (
     <Page>
+    <SubscriptionProvider>
+      <SubscriptionPrompt />
       <div className={postStyles.postWrapper}>
         <p className={postStyles.backButton} onClick={() => navigate(-1)}>
           <IoIosArrowBack />
@@ -72,6 +76,7 @@ const Blog = props => {
           </article>
         </div>
       </div>
+    </SubscriptionProvider>
     </Page>
   )
 }

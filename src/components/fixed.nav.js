@@ -52,7 +52,7 @@ const Fixed = props => {
         </Link>
       </li> */}
       <li>
-        <a href="https://www.patreon.com/jam_and_germs" target="_blank">
+        <a href="https://www.gofundme.com/f/qcv6qm-help-me-get-that-dic" target="_blank">
           <Button text="Donate" variant="primary"></Button>
         </a>
       </li>

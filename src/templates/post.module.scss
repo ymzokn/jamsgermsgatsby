@@ -40,6 +40,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .post-wrapper {
+    width: 90%;
+  }
+}
+
 @media (max-width: 480px) {
   .post-wrapper {
     width: 100%;

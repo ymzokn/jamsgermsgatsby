@@ -52,7 +52,7 @@ const ContactList = () => {
         </a>
         <a
           className={contactListStyles.contact}
-          href="https://www.youtube.com/user/Savantcm"
+          href="https://www.youtube.com/jamsgerms"
           target="_blank"
           rel="noopener noreferrer"
         >

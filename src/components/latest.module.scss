@@ -69,6 +69,18 @@
   }
 }
 
+@media (max-width: 767px) {
+  .clip-text {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .clip-text {
+    // font-size: 3vw;
+  }
+}
+
 // @media (min-width: 767px) {
 //   .clip-text {
 //     font-size: 2rem;

@@ -13,11 +13,11 @@
 }
 
 .logo {
-  height: 15vh;
-  min-height: 15vh;
-  max-height: 15vh;
+  height: 7.5rem;
+  min-height: 7.5rem;
+  max-height: 7.5rem;
   transition: transform 0.2s;
-  transform: translateY(2.5vh);
+  transform: translateY(2.5rem);
   margin-left: 5vw;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .shrunk:hover {
-  transform: translateY(2.5vh) scale(1);
+  transform: translateY(2.5rem) scale(1);
 }
 
 .horizontal-nav {
@@ -247,7 +247,7 @@
   }
 
   .logo {
-  transform: translateY(4rem);
+  transform: translateY(2rem);
   }
 
   .shrunk {

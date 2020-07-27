@@ -50,10 +50,10 @@
   // right: 2.5vh;
   // bottom: 22vh;
   // left: 2.5vh;
-  top: 5%;
-  bottom: 5%;
-  left: 5%;
-  right: 5%;
+  top: .5rem;
+  bottom: .5rem;
+  left: .5rem;
+  right: .5rem;
   background-color: hsla(0, 0%, 100%, 0.8);
 }
 
@@ -63,62 +63,19 @@
 // }
 // }
 
-@media (max-width: 1000px) {
-  .clip-text {
-    font-size: 10vw;
-  }
-}
-
 @media (max-width: 767px) {
-  .clip-text {
-    font-size: 5vw;
+  
+  .latest-wrapper {
+    height: 15rem;
   }
+
+  .clip-text {
+    font-size: 3rem;
+  }  
 }
 
 @media (max-width: 480px) {
   .clip-text {
-    // font-size: 3vw;
+    font-size: 3rem;
   }
 }
-
-// @media (min-width: 767px) {
-//   .clip-text {
-//     font-size: 2rem;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .clip-text {
-//     font-size: 2.6rem;
-//   }
-// }
-
-// @media (min-width: 1280px) {
-//   .clip-text {
-//     font-size: 3rem;
-//   }
-// }
-
-// @media (min-width: 800px) {
-//   .clip-text {
-//     font-size: 3rem;
-//   }
-// }
-
-// @media (min-width: 1200px) {
-//   .clip-text {
-//     font-size: 4rem;
-//   }
-// }
-
-// @media (min-width: 1500px) {
-//   .clip-text {
-//     font-size: 5rem;
-//   }
-// }
-
-// @media (min-width: 1800px) {
-//   .clip-text {
-//     font-size: 6rem;
-//   }
-// }

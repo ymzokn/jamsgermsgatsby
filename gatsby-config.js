@@ -17,6 +17,7 @@ module.exports = {
   siteMetadata: {
     title: "Jam's Germs",
     author: "Okan Yılmaz",
+    siteUrl: `https://jamsgerms.com`
   },
   /* Your site config here */
   plugins: [

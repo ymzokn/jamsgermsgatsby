@@ -41,7 +41,7 @@ const Hamburger = props => {
                 Blog
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 className={headerStyles.navLink}
                 to="/Identification"
@@ -67,12 +67,7 @@ const Hamburger = props => {
               >
                 Shop
               </Link>
-            </li>
-            <li>
-              <Link to="/Donate">
-                <Button text="Donate" variant="primary"></Button>
-              </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       )}

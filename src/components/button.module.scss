@@ -6,10 +6,10 @@
   text-transform: uppercase;
   padding: 1rem 2rem;
   border: none;
-  background-color: #32abe2;
+  background-color: hsl(199, 75%, 54%);
   color: whitesmoke;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .primary_sliding {
@@ -29,22 +29,26 @@
 }
 
 .primary:active,
-.primary:focus {
+.primary:focus,
+.primary:hover {
   outline: none;
+  // background-color: hsl(45.06, 95.95%, 48.43%);
+  background-color: hsl(199, 95%, 54%);
 }
 
 .secondary {
-  border: 1px solid #32abe2;
+  border: none;
   padding: 0.5rem 1rem;
   color: #32abe2;
   cursor: pointer;
   font-family: $font;
   transition: all 0.2s;
+  font-size: 1rem;
 }
 
 .secondary:focus,
 .secondary:hover {
-  background-color: yellowgreen;
+  background-color: hsl(44.71, 100%, 50%);
   color: white;
 }
 

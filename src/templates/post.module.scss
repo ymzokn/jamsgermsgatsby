@@ -1,9 +1,11 @@
-.post-wrapper {
-  width: 60%;
-  margin: 5vh auto;
+.page-wrapper {
   display: flex;
-  flex-direction: column;
-  padding: 2.5rem 1rem;
+  padding: 1rem;
+}
+
+.post {
+  width: 80%;
+  padding: 2rem;
 }
 
 .post-header {
@@ -19,7 +21,7 @@
   font-size: 1.2rem;
   color: hsl(175, 22, 22);
   cursor: pointer;
-  margin: 0.5rem 0;
+  margin: .5rem 1rem;
   display: flex;
   align-items: center;
 }
@@ -40,13 +42,23 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .post-wrapper {
-    width: 90%;
+@media (max-width: 767px) {
+  .page-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .post {
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
+  .page-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  
   .post-wrapper {
     width: 100%;
   }

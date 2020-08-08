@@ -1,0 +1,92 @@
+.donation-prompt-wrapper {
+    position: relative;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // border: 1px solid #32abe2;
+    font-family: "Source Serif Pro", serif;
+    font-weight: 400;
+    background-color:hsl(45.06, 95.95%, 48.43%);
+    color: white;
+    flex: 0 0 20%;
+    min-width: 15rem;
+    max-height: 60rem;
+    min-height: 60rem;
+}
+
+.donation-prompt-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    color: hsl(45.06, 95.95%, 48.43%);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.donation-prompt-body {
+    & h1 {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+    flex: 1;
+    // padding-top: 10rem;
+}
+ 
+.separator {
+    height: 1px;
+    margin: 0.5rem 0;
+    width: 80%;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid lightgray;
+}
+
+.donation-amounts {
+    margin: 1rem 0;
+    list-style-type: none;
+}
+
+.donation-amounts li {
+    display: flex;
+    align-items: center;
+}
+
+.monthly-donation {
+    margin-top: 1rem;
+}
+
+.monthly-donation li::before {
+        content: url(https://upload.wikimedia.org/wikipedia/commons/0/09/201703_tardigrade.svg);
+        width: 2.5rem;
+}
+
+.one-time-donation {
+    margin-top: 1rem;
+}
+
+.one-time-donation .donation-text {
+    margin: 1rem 0;
+}
+
+@media (max-width: 767px) {
+    .donation-prompt-wrapper {
+        height: 50rem;
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-prompt-wrapper {
+        height: 50rem;
+        width: 90%;
+    }
+}

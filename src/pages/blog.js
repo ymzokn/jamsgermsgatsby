@@ -6,6 +6,7 @@ import Head from "./../components/head"
 import Img from "gatsby-image"
 import blogListStyles from "./blog.module.scss"
 import SubscriptionPrompt from "../components/SubscriptionPrompt"
+import DonationPrompt from "../components/donationPrompt"
 
 const Blog = () => {
   const data = useStaticQuery(graphql`
@@ -38,6 +39,8 @@ const Blog = () => {
     <SubscriptionProvider>
       <SubscriptionPrompt />
       <Head title="Blog"></Head>
+      <div className={blogListStyles.pageWrapper}>
+      <DonationPrompt className={blogListStyles.donationPromptWrapper} />
       <section className={blogListStyles.postListWrapper}>
         {data.allContentfulBlogPost.edges.map(post => {
           return (
@@ -61,6 +64,7 @@ const Blog = () => {
           )
         })}
       </section>
+      </div>
     </SubscriptionProvider>
     </Page>
   )

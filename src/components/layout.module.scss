@@ -1,12 +1,17 @@
 .page-layout {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .content {
-  overflow: hidden;
-  padding-top: 5vh;
-  min-height: 100vh;
+  position: relative;
+  padding-top: 7.5rem;
+}
+
+.border-image {
+  width: 100%;
+  min-height: 100%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 5%, white 5%, white 95%, rgba(255, 255, 255, 0) 95%);
 }
 
 .footer {
@@ -74,8 +79,13 @@
   
 }
 
-// @media (max-width: 767px) {
-//   .content {
-//     padding-top: 2.5rem;
-//   }
-// }
+@media (max-width: 1000px) {
+  .content {
+    padding-top: 5rem;
+  }
+
+  
+  .border-image {
+    // margin-top: 5rem;
+  }
+}

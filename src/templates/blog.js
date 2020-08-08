@@ -10,6 +10,7 @@ import { GoCalendar } from "react-icons/go"
 import { navigate } from "@reach/router"
 import postStyles from "./post.module.scss"
 import { IoIosArrowBack } from "react-icons/io"
+import DonationPrompt from "../components/donationPrompt"
 
 export const query = graphql`
   query($slug: String!) {
@@ -37,6 +38,8 @@ const Blog = props => {
     <Page>
     <SubscriptionProvider>
       <SubscriptionPrompt />
+      <div className={postStyles.pageWrapper}>
+        <DonationPrompt className={postStyles.donationPromptWrapper} />
       <div className={postStyles.postWrapper}>
         <p className={postStyles.backButton} onClick={() => navigate(-1)}>
           <IoIosArrowBack />
@@ -74,6 +77,7 @@ const Blog = props => {
           <article className={postStyles.postText}>
             {documentToReactComponents(props.data.contentfulBlogPost.body.json)}
           </article>
+        </div>
         </div>
       </div>
     </SubscriptionProvider>

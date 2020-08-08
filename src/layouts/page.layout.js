@@ -6,7 +6,11 @@ const Page = props => {
   return (
       <div className={layoutStyles.pageLayout}>
         {typeof window !== "undefined" && <Header />}
-        <div className={layoutStyles.content}>{props.children}</div>
+          <div className={layoutStyles.content}>
+            <div className={layoutStyles.borderImage}>
+              {props.children}
+            </div>
+        </div>
         {/* <Footer className={layoutStyles.footer} /> */}
       </div>
   )

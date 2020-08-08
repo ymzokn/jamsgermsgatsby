@@ -1,8 +1,6 @@
 @import "../styles/variables.scss";
 
 .hero-wrapper {
-  // margin-top: 5rem;
-  margin-top: 5vh;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
@@ -10,6 +8,8 @@
   height: calc(90vh);
   max-height: calc(90vh);
   min-height: calc(90vh);
+  position: relative;
+  z-index: 8;
 
   .hero-text-wrapper {
     grid-column: 1/8;
@@ -33,7 +33,7 @@
     .hero-description {
       font-size: 0.7rem;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 600;
       letter-spacing: 0.1rem;
     }
   }
@@ -75,7 +75,6 @@
 
 @media (max-width: 1000px) {
   .hero-wrapper {
-    margin-top: 1rem;
     grid-gap: 2rem;
     display: flex;
     flex-direction: column;
@@ -104,7 +103,7 @@
 
     .hero-image-wrapper {
       order: 2;
-      width: 100vw;
+      // width: 100vw;
       height: 40rem;
     }
 

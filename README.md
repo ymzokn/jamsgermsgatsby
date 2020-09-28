@@ -1,1 +1,1 @@
-# JAM'S GERMS LANDING PAGE AND BLOG
+# Jam's Germs Landing Page and Blog
